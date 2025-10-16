@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@theme{
+    --font-roboto: "Roboto", sans-serif;
+    --font-victor: "Victor Mono", monospace ;
+    --color-corBackground: #CCD0CF;
+    --color-corNavbar: #11212D;
+    --color-cortitulo: #06141B;
+    --color-corFontNavbar: #EFEFEF;
+    --color-corCard: #152735;
+    --color-cortituloDiv: #DADADA;
+}
+
+@layer utilities {
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+}
+
+@keyframes borderPulse {
+    0%, 100% {
+        border-color: theme(colors.blue.500);
+    }
+    50% {
+        border-color: theme(colors.blue.100);
+    }
+}
+
+@utility animate-borderPulse {
+    animation: borderPulse 2s ease-in-out infinite;
+}
