@@ -46,7 +46,7 @@ export const Main = () => {
                         <Menu className="w-10 h-10 text-white hover:text-gray-300"/>
                     </button>
                     <div className="hidden md:flex gap-5">
-                        <li className="text-white text-lg opacity-95 hover:border-b-3 transition-all border-white"><button className="cursor-pointer" onClick={() => handleTabChange("cv")}>Currículo</button></li>
+                        <li className="text-white text-lg opacity-95 hover:border-b-3 border-white transition-all"><button className="cursor-pointer" onClick={() => handleTabChange("cv")}>Currículo</button></li>
                         <li className="text-white text-lg opacity-95 hover:border-b-3 transition-all border-white"><button className="cursor-pointer" onClick={() => handleTabChange("projecto")}>Projectos</button></li>
                     </div>
                 </ul>

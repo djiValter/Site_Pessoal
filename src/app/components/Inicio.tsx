@@ -36,8 +36,8 @@ export const Inicio = ({onChangeTab}: InicioProps) => {
                         <p className="text-[15px] md:text-md mb-2 font-victor text-corFontNavbar">melhorar a experiência dos usuários e a performance das aplicações.</p>
                     </div>
                     <div className="flex gap-3 mx-10 md:mx-0">
-                        <button className="w-30 h-10 bg-white rounded-xl hover:bg-gray-500" onClick={() => onChangeTab("cv")}><a href="#">Currículo</a></button>
-                        <button className="w-30 h-10 bg-white rounded-xl hover:bg-gray-500" onClick={() => onChangeTab("projecto")}><a href="#">Projectos</a></button>
+                        <button className="w-30 h-10 bg-white rounded-xl hover:bg-gray-500 transition-all duration-300" onClick={() => onChangeTab("cv")}><a href="#">Currículo</a></button>
+                        <button className="w-30 h-10 bg-white rounded-xl hover:bg-gray-500 transition-all duration-300" onClick={() => onChangeTab("projecto")}><a href="#">Projectos</a></button>
                     </div>
                 </div>
             </div>

@@ -35,7 +35,7 @@ export  const Cv = () => {
                     group relative flex items-center justify-center
                     w-24 h-12 rounded-xl font-roboto font-semibold text-md
                     bg-gray-200 border border-corFontNavbar text-gray-800
-                    hover:bg-gray-400 transition-colors duration-300
+                    hover:bg-gray-400 transition-all duration-700 ease-in-out
                     overflow-hidden animate-bounce"
                 >
                     <span
@@ -166,7 +166,7 @@ export  const Cv = () => {
 
                 <button className="cursor-pointer hidden rounded-full w-13 h-13
                     bg-white mr-5 md:flex justify-center items-center
-                    hover:bg-corBackground animate-float" onClick={scrollToTop}><ArrowUp /></button>
+                    hover:bg-corBackground animate-float transition-all duration-300 ease-in-out" onClick={scrollToTop}><ArrowUp /></button>
             </div>
         </div>
     )
