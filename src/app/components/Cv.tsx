@@ -117,7 +117,7 @@ export  const Cv = () => {
                 <div className="mr-7 flex flex-col">
                     <div>
                         <p className="font-victor text-corFontNavbar">
-                            Conhecimentos de Microsoft Office (Word, Excel, Power Point,), internet na óptica do <br/> utilizador
+                            Conhecimentos de Microsoft Office (Word, Excel, Power Point), internet na óptica do <br/> utilizador
                         </p>
                     </div>
                     <div className="mt-10">

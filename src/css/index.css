@@ -34,3 +34,28 @@
 @utility animate-borderPulse {
     animation: borderPulse 2s ease-in-out infinite;
 }
+
+/* Perspectiva para o container */
+.perspective {
+    perspective: 1000px;
+}
+
+/* Preservar o 3D para flip */
+.transform-style-preserve-3d {
+    transform-style: preserve-3d;
+}
+
+/* Rotação no eixo Y */
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}
+
+/* Esconde a face traseira quando não virada */
+.backface-hidden {
+    backface-visibility: hidden;
+}
+
+/* Adiciona suavidade no flip */
+.transition-transform {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,5 +1,6 @@
 import linkedin from "./img/linkedin.png";
 import github from "./img/github.png";
+import instagram from "./img/instagram.png";
 import bgImage from "./img/fundo.png"
 import Typewriter from "typewriter-effect";
 
@@ -55,8 +56,8 @@ export const Inicio = ({onChangeTab}: InicioProps) => {
                 </div>
                 <div>
                     <h1 className="font-bold text-white mb-1">Me siga</h1>
-                    <div className="flex">
-                        <div className="mr-2">
+                    <div className="flex flex-row gap-2">
+                        <div className="">
                             <a href="https://www.linkedin.com/in/valter-viola-muriela-576b772a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                                 <img src={linkedin} alt="linkedin" className="w-7 h-7 hover:scale-110 transition duration-200"/>
                             </a>
@@ -64,6 +65,11 @@ export const Inicio = ({onChangeTab}: InicioProps) => {
                         <div>
                             <a href="https://github.com/djiValter">
                                 <img src={github} alt="github" className="w-7 h-7 hover:scale-110 transition duration-200"/>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/djivalter?utm_source=qr&igsh=ZmY4MWdoZ3JiaDUy">
+                                <img src={instagram} alt="instagram" className="w-7 h-7 hover:scale-110 transition duration-200"/>
                             </a>
                         </div>
                     </div>

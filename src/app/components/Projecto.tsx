@@ -11,6 +11,7 @@ import image4 from "./img/Login page template _ Premium PSD.jpg";
 import image5 from "./img/Patient profile - Dashboard Medical web app.jpg";
 import { useEffect, useRef } from "react";
 
+
 const images = [image1, image2, image3, image4, image5];
 const servicos = [
     {
@@ -107,16 +108,13 @@ export const Projecto = () => {
                             desde interfaces modernas e responsivas até arquiteturas back-end robustas
                         </p>
                         <p className="text-cortituloDiv text-1xl">
-                            e seguras transformo ideias em experiências digitais completas do front-end
+                            e seguras, transformo ideias em experiências digitais completas do front-end
                         </p>
                         <p className="text-cortituloDiv text-1xl">
-                            ao back-end, construo soluções que conectam.
+                            ao back-end, construo soluções que conectam. Trabalho com paixão em todo
                         </p>
                         <p className="text-cortituloDiv text-1xl">
-                            Trabalho com paixão em todo o ciclo de desenvolvimento: concepção,
-                        </p>
-                        <p className="text-cortituloDiv text-1xl">
-                            design, programação, testes e deploy.
+                            o ciclo de desenvolvimento: concepção, design, programação, testes e deploy.
                         </p>
                     </div>
                 </div>
@@ -151,16 +149,21 @@ export const Projecto = () => {
                 <h1 className="text-cortituloDiv font-bold text-3xl mb-10">Serviços</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 mt-25">
                     {servicos.map((card, i) => (
-                        <div
-                            key={i}
-                            className="w-full h-60 bg-corCard rounded-xl shadow-xl/50 p-5 flex flex-col gap-4 justify-center items-center hover:scale-110 transition duration-700"
-                        >
-                            <div className="text-2xl">{card.icone}</div>
-                            <div className="flex flex-col gap-3 items-center">
-                                <h3 className="font-bold text-xl">{card.titulo}</h3>
-                                <p className="text-sm text-white opacity-90">{card.descricao}</p>
-                            </div>
+                        <div key={i} className="w-full h-60 perspective">
+                            <div className="relative w-full h-full transition-transform duration-500 transform-style-preserve-3d group hover:rotate-y-180">
 
+                                {/* Frente */}
+                                <div className="absolute w-full h-full backface-hidden bg-corCard rounded-xl shadow-xl/50 p-5 flex flex-col gap-4 justify-center items-center">
+                                    <div className="text-2xl">{card.icone}</div>
+                                    <h3 className="font-extrabold text-white text-xl">{card.titulo}</h3>
+                                </div>
+
+                                {/* Verso */}
+                                <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white/95 backdrop-blur-md rounded-xl shadow-lg border border-gray-200 p-5 flex items-center justify-center text-center">
+                                    <p className="text-gray-800 text-sm font-medium">{card.descricao}</p>
+                                </div>
+
+                            </div>
                         </div>
                     ))}
                 </div>
