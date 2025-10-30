@@ -1,72 +1,56 @@
-# Valter Viola Muriela
+🌐 Site Pessoal
+
+Meu site pessoal desenvolvido com **React e Tailwind CSS** — uma forma moderna, rápida e responsiva de apresentar quem sou, meus projectos e formas de contacto.
+
 <p align="center">
   <img src="./Imagem.png" alt="Preview do Site Pessoal" width="800"/>
 </p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React** — Biblioteca JavaScript para criação de interfaces dinâmicas  
+- 🌀 **Tailwind CSS** — Framework CSS utilitário para estilização rápida e responsiva  
+- 🧠 **TypeScript** — Superset do JavaScript com tipagem estática  
+- 🌐 **Netlify** — Plataforma utilizada para hospedagem e deploy contínuo
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧱 Estrutura do Projeto
+Site_Pessoal/
+├── index.html
+├── style.css
+├── script.js
+├── imagens/
+└── README.md
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🌍 Acesse o Site
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+👉 [Clique aqui para visitar](https://valterviola.netlify.app/)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+## 💡 Funcionalidades
+
+- Página inicial com apresentação pessoal  
+- Secção “Sobre mim” com foto e bio
+- Curriculum Vitae 
+- Lista de projectos desenvolvidos  
+- Links diretos para GitHub e LinkedIn  
+- Design responsivo para mobile
+
+
+## 👨‍💻 Autor
+
+**Valter Viola Muriela**  
+📧 djivalter@gmail.com  
+🔗 [GitHub](https://github.com/djiValter)
+
+
+## 📄 Licença
+
+Este projeto é de **minha autoria** e todos os direitos são reservados.  
+Sinta-se à vontade para consultar, mas **não é permitido uso ou redistribuição sem minha autorização**.
+
+
