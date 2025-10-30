@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Valter Viola Muriela
 <p align="center">
   <img src="./Imagem.png" alt="Preview do Site Pessoal" width="800"/>
 </p>
